@@ -1,5 +1,3 @@
-# Welcome to Jober's Homepage
-
 
 # Some of my Projects
 

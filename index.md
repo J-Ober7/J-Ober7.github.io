@@ -1,6 +1,19 @@
 # Welcome to Jober's Homepage
 
 
+# Some of my Projects
+
+## Drummage: Dungeon of the Bongo-d
+
+### Trailer
+[![](http://img.youtube.com/vi/MaS38SrlOtI/0.jpg)](http://www.youtube.com/watch?v=MaS38SrlOtI "Trailer")
+
+### Post Mortem
+Made for the final project of my Game Programming Class, Drummage was my first forray into implementing a rythm game of any kind. My biggest contribution to the game was the combat system that it used to handle the player's interactions with enemies. The combat system made use of a modular action system where the player decided which actions they would take and in which order they would come in. Each action was made up of a series of up to 8 inputs that had to be played in rythm to be executed correctly by the player. The player's inputs had to be paired up as either notes or stored seperately as quarter notes depending on between their inputs and then further paired up to form the 4-8 note chords that made up each action they could take in combat. Once the chord was selected it had to be then checked against whichever chord the player had chosen to try and cast in that slot to see if it matched. Correctly matched chords then produce whichever action they player was trying to complete. 
+
+This need for very precise windows of time to be tracked in order to correctly place the players inputs into the the correct notes was an interesting challenge, as I had to keep track of 3 different times at any given moment: the time between the current and previous frame, the time between the last not and the current one, and the time until the current chord's window for input was closed. There were quite a number of headaches along the way when I was first designing the system to make sure that inputs weren't being dropped or overridden if player inputed to fast or slowly.
+
+If I were to go back and redo this game the biggest thing I would change would have been to try and seperate out all the different tasks that the main rythm loop had. It dealt with far too much of its logic for creating and tracking the player's input patterns inside of the the loop that it used keep track of the current note and chord the clock was on, and that logic for the inputs could have been seperated out into seperate supporting functions instead.
 
 ## Breakout 
 ![Image of Breakout](https://J-Ober7.github.io/media/breakout/BreakoutLevel1.PNG)

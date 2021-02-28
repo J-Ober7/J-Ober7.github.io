@@ -10,6 +10,9 @@
 ### Trailer
 [![](http://img.youtube.com/vi/MaS38SrlOtI/0.jpg)](http://www.youtube.com/watch?v=MaS38SrlOtI "Trailer")
 
+### Repository
+https://github.com/J-Ober7/Drummage-Dungeon-of-the-Bongod
+
 ### Post Mortem
 Made for the final project of my Game Programming Class, Drummage was my first forray into implementing a rythm game of any kind. My biggest contribution to the game was the combat system that it used to handle the player's interactions with enemies. The combat system made use of a modular action system where the player decided which actions they would take and in which order they would come in. Each action was made up of a series of up to 8 inputs that had to be played in rythm to be executed correctly by the player. The player's inputs had to be paired up as either notes or stored seperately as quarter notes depending on between their inputs and then further paired up to form the 4-8 note chords that made up each action they could take in combat. Once the chord was selected it had to be then checked against whichever chord the player had chosen to try and cast in that slot to see if it matched. Correctly matched chords then produce whichever action they player was trying to complete. 
 

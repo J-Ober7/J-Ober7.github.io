@@ -2,6 +2,20 @@
 
 
 ## Some of my Projects
+
+## Clockwork Story: A Mouse and His Tower
+
+### Trailer
+[![](http://img.youtube.com/vi/k-ct4xtg0ko/0.jpg)](http://www.youtube.com/watch?v=k-ct4xtg0ko "Trailer")
+
+### Repository
+https://github.com/J-Ober7/Clockwork-Story
+
+### itch.io
+https://gregoryloden.itch.io/clockwork-story
+
+### Post Mortem
+Clockwork Story was the game my team made as part of my first Global Game Jam. The theme for the game jam had be "rebuild/repair" and after a couple of hours tossing ideas back and forth we eventually settled on the clockwork theme as one that could be fun to work with. The core gameplay was rather simplistic, focuesed on the player shuffling around a series of cogs to lift the bell up the floors of the tower and gain access to the higher floors, with the end goal of bringing the bell to the top of the tower and making it ring. My favorite part of working on this project was probably working the the music that Stephen, our very talented musician, was able to make over the course of the weekend. Using FMod, we were able to split up the sound track into three seperate tracks of differing intensities based off of how far up the tower the bell was. The end result was that the tower had a feeling of coming alive as you were able to bring the bell higher and higher into the tower and more of the clockwork-like instramentals were brought into the BGM.
   
   
   
@@ -23,6 +37,6 @@ If I were to go back and redo this game the biggest thing I would change would h
 ## Breakout 
 ![Image of Breakout](https://J-Ober7.github.io/media/breakout/BreakoutLevel1.PNG)
 ### Post Mortem
-For my first foray into creating a game from the ground up this one went pretty good. There are a couple of changes I would make if I had 8 more weeks to work on this project. I think the biggest problem I had in the structure of my code was that my util header file was a but of a mess, holding a bunch of different class structures that would have been better off seperated out. Ball, Paddle, Arena, and Brick would have all been better off in their own BreakoutObject.hpp header while PlayerScore was instead put into a header file more focused on controlling the game, like GameController.hpp. I would have also set up a GameManager class to keep track of the score, lives and levels instead of just having them be free floating in the main of breakout.cpp. 
+For my first foray into creating a game from the ground up using SDL, this one went pretty good. There are a couple of changes I would make if I had 8 more weeks to work on this project. I think the biggest problem I had in the structure of my code was that my util header file was a but of a mess, holding a bunch of different class structures that would have been better off seperated out. Ball, Paddle, Arena, and Brick would have all been better off in their own BreakoutObject.hpp header while PlayerScore was instead put into a header file more focused on controlling the game, like GameController.hpp. I would have also set up a GameManager class to keep track of the score, lives and levels instead of just having them be free floating in the main of breakout.cpp. 
 
 The other big changes I would have made was create a better way of checking wether the ball was colliding with a brick or not and to add a degree of randomness for how the ball bounced off the paddle. The current implementaion of ends up checking every brick in the grid every frame for a collision with the ball when I could almost certainly cut that down to a fraction of the number of comparisons. A potential solution would have been to checked the 4 corners of the ball to see where on the grid of bricks each corner landed and only checked those 4 bricks. The would have limited my number of checks each frame to a maximum of 4, but most likely 1-2, as the size of the ball would limit it from being over more than 4 squares at ones, presuming that it managed to move fast enough that it crossed into 4 squares between frames. The ball not being randomized lead to some repeating patterns in how the ball moved that could be frustrating to play against and randomization should help to break those patterns and lead to a more fun experience.

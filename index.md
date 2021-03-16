@@ -3,6 +3,19 @@
 
 ## Some of my Projects
 
+
+
+## An SDL Platformer: Learning Game Engines (Group: Fen, Izzy, Jakob)
+### Post Mortem
+For this project, the group learned quite a bit about the different struggles that designers can face when trying to implement different design patterns to build the foundatoin of a game engine. In particular, division of information and determining where and what classes should be getting what information was one of our main problems and it occupied quite a bit of our planning talks. Ultimately, what we decided to do was have a Collision manager determine who was doing the collisions and the have the CollisionComponet hand the generated CollisionEvents back to our primary GameObject, where the CollisionEvents would then be accessible by all the other components attached to the GameObject, which would then handle all the logic regarding handling the different collisions. 
+
+We also spent quite a bit of time learning how to develop tools using python, in specific the TKinter libarary. Outside of one issue of a corrupted python library preventing one of the group members being unable to run the program, the development of our two tools we used for this project, a TileMap editor for loading up TileAtlases and creating and saving tile maps, as well as a sprite previewer, which could be used cut out and view specific sequences of sprites from a sprite sheet, went quite well. The only hick-up we had was an issue with animating the sprite cut out by the sprite editor in the window, due to a quirk of the python Application.
+
+If we had another 8 weeks to work on this project, we would focus on fleshing out our game. Currently our project was mostly focused on getting a basic engine with a component system working. To flesh out our game, we would add more levels, abilities, and enemies, adding more sophisticated elements to our engine as we need. We would also swap in new assets that better adhere to our game's identity. Finally, we would add polish such as having a title screen and game menu.
+
+
+
+
 ## Clockwork Story: A Mouse and His Tower
 
 ### Trailer

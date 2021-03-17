@@ -6,10 +6,13 @@
 
 
 ## An SDL Platformer: Learning Game Engines (Group: Fen, Izzy, Jakob)
-![Image of Platformer](https://J-Ober7.github.io/SDLPlatformer/Images/PlatfrmerSS1.png)
-![Image of Platformer](https://J-Ober7.github.io/SDLPlatformer/Images/PlatformerSS2.png)
-![Image of Platformer](https://J-Ober7.github.io/SDLPlatformer/Images/PlatformerSS3.png)
-[![](https://J-Ober7.github.io/SDLPlatformer/Images/PlatformerSS1.png)](https://www.youtube.com/watch?v=jErRWb__tXE "Trailer")
+![Image of Platformer](https://J-Ober7.github.io/media/SDLPlatformer/Images/PlatfrmerSS1.png)
+
+![Image of Platformer](https://J-Ober7.github.io/media/SDLPlatformer/Images/PlatformerSS2.png)
+
+![Image of Platformer](https://J-Ober7.github.io/media/SDLPlatformer/Images/PlatformerSS3.png)
+
+[![](http://img.youtube.com/vi/jErRWb__tXE/0.jpg)](http://www.youtube.com/watch?v=jErRWb__tXE "Trailer")
 ### Source Code 
 <a href="/media/SDLPlatformer/html/">Documentation here</a>
 

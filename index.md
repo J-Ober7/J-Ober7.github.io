@@ -6,6 +6,10 @@
 
 
 ## An SDL Platformer: Learning Game Engines (Group: Fen, Izzy, Jakob)
+
+### Source Code 
+file:///C:/Users/cyber/GitHub/Assignment2/platformer-jakob_fen_izzy/Game/Docs/html/index.html
+
 ### Post Mortem
 For this project, the group learned quite a bit about the different struggles that designers can face when trying to implement different design patterns to build the foundatoin of a game engine. In particular, division of information and determining where and what classes should be getting what information was one of our main problems and it occupied quite a bit of our planning talks. Ultimately, what we decided to do was have a Collision manager determine who was doing the collisions and the have the CollisionComponet hand the generated CollisionEvents back to our primary GameObject, where the CollisionEvents would then be accessible by all the other components attached to the GameObject, which would then handle all the logic regarding handling the different collisions. 
 

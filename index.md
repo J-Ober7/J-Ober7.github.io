@@ -6,7 +6,7 @@
 
 
 ## An SDL Platformer: Learning Game Engines (Group: Fen, Izzy, Jakob)
-![Image of Platformer](https://J-Ober7.github.io/SDLPlatformer/Images/PlatformerSS1.png)
+![Image of Platformer](https://J-Ober7.github.io/SDLPlatformer/Images/PlatfrmerSS1.png)
 ![Image of Platformer](https://J-Ober7.github.io/SDLPlatformer/Images/PlatformerSS2.png)
 ![Image of Platformer](https://J-Ober7.github.io/SDLPlatformer/Images/PlatformerSS3.png)
 [![](https://J-Ober7.github.io/SDLPlatformer/Images/PlatformerSS1.png)](https://www.youtube.com/watch?v=jErRWb__tXE "Trailer")

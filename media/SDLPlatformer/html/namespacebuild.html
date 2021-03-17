@@ -72,9 +72,9 @@ $(function() {
 Variables</h2></td></tr>
 <tr class="memitem:aa75f224fbf929d8e46d1d31968ee6451"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#aa75f224fbf929d8e46d1d31968ee6451">COMPILER</a> = &quot;clang++ -std=c++17&quot;</td></tr>
 <tr class="separator:aa75f224fbf929d8e46d1d31968ee6451"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7cc8d618e5b0ddf2f102be86d8b4b70"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#ae7cc8d618e5b0ddf2f102be86d8b4b70">SOURCE</a> = &quot;./src/*.cpp&quot;</td></tr>
-<tr class="separator:ae7cc8d618e5b0ddf2f102be86d8b4b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad848a55f54f2234a8c862b0c3597ac1b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#ad848a55f54f2234a8c862b0c3597ac1b">EXECUTABLE</a> = &quot;lab&quot;</td></tr>
+<tr class="memitem:a832e50b60ae1bc20032caf0540c2176b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#a832e50b60ae1bc20032caf0540c2176b">SOURCE</a> = &quot;*.cpp&quot;</td></tr>
+<tr class="separator:a832e50b60ae1bc20032caf0540c2176b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad848a55f54f2234a8c862b0c3597ac1b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#ad848a55f54f2234a8c862b0c3597ac1b">EXECUTABLE</a> = &quot;../bin/platformer&quot;</td></tr>
 <tr class="separator:ad848a55f54f2234a8c862b0c3597ac1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bf544daac24c8c493f0bcab1fdddd32"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#a1bf544daac24c8c493f0bcab1fdddd32">ARGUMENTS</a> = &quot;&quot;</td></tr>
 <tr class="separator:a1bf544daac24c8c493f0bcab1fdddd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -82,8 +82,8 @@ Variables</h2></td></tr>
 <tr class="separator:a5d6144bd70c120b901b0047a008b89ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88bc45090f5d9a0b72dc833bfe64e032"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#a88bc45090f5d9a0b72dc833bfe64e032">LIBRARIES</a> = &quot;&quot;</td></tr>
 <tr class="separator:a88bc45090f5d9a0b72dc833bfe64e032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4abc8ff2c7b2960913e7931bb3f37aa9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#a4abc8ff2c7b2960913e7931bb3f37aa9">compileString</a> = <a class="el" href="namespacebuild.html#aa75f224fbf929d8e46d1d31968ee6451">COMPILER</a>+&quot; &quot;+<a class="el" href="namespacebuild.html#a1bf544daac24c8c493f0bcab1fdddd32">ARGUMENTS</a>+&quot; -o &quot;+EXECUTABLE+&quot; &quot;+&quot; &quot;+<a class="el" href="namespacebuild.html#a5d6144bd70c120b901b0047a008b89ad">INCLUDE_DIR</a>+&quot; &quot;+<a class="el" href="namespacebuild.html#ae7cc8d618e5b0ddf2f102be86d8b4b70">SOURCE</a>+&quot; &quot;+<a class="el" href="namespacebuild.html#a88bc45090f5d9a0b72dc833bfe64e032">LIBRARIES</a></td></tr>
-<tr class="separator:a4abc8ff2c7b2960913e7931bb3f37aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7d648a6e7eb1f6b36140a180580b24"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#aad7d648a6e7eb1f6b36140a180580b24">compileString</a> = <a class="el" href="namespacebuild.html#aa75f224fbf929d8e46d1d31968ee6451">COMPILER</a>+&quot; &quot;+<a class="el" href="namespacebuild.html#a1bf544daac24c8c493f0bcab1fdddd32">ARGUMENTS</a>+&quot; -o &quot;+EXECUTABLE+&quot; &quot;+&quot; &quot;+<a class="el" href="namespacebuild.html#a5d6144bd70c120b901b0047a008b89ad">INCLUDE_DIR</a>+&quot; &quot;+<a class="el" href="namespacebuild.html#a832e50b60ae1bc20032caf0540c2176b">SOURCE</a>+&quot; &quot;+<a class="el" href="namespacebuild.html#a88bc45090f5d9a0b72dc833bfe64e032">LIBRARIES</a></td></tr>
+<tr class="separator:aad7d648a6e7eb1f6b36140a180580b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a1bf544daac24c8c493f0bcab1fdddd32"></a>
@@ -114,14 +114,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4abc8ff2c7b2960913e7931bb3f37aa9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4abc8ff2c7b2960913e7931bb3f37aa9">&#9670;&nbsp;</a></span>compileString</h2>
+<a id="aad7d648a6e7eb1f6b36140a180580b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7d648a6e7eb1f6b36140a180580b24">&#9670;&nbsp;</a></span>compileString</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string build.compileString = <a class="el" href="namespacebuild.html#aa75f224fbf929d8e46d1d31968ee6451">COMPILER</a>+&quot; &quot;+<a class="el" href="namespacebuild.html#a1bf544daac24c8c493f0bcab1fdddd32">ARGUMENTS</a>+&quot; -o &quot;+EXECUTABLE+&quot; &quot;+&quot; &quot;+<a class="el" href="namespacebuild.html#a5d6144bd70c120b901b0047a008b89ad">INCLUDE_DIR</a>+&quot; &quot;+<a class="el" href="namespacebuild.html#ae7cc8d618e5b0ddf2f102be86d8b4b70">SOURCE</a>+&quot; &quot;+<a class="el" href="namespacebuild.html#a88bc45090f5d9a0b72dc833bfe64e032">LIBRARIES</a></td>
+          <td class="memname">string build.compileString = <a class="el" href="namespacebuild.html#aa75f224fbf929d8e46d1d31968ee6451">COMPILER</a>+&quot; &quot;+<a class="el" href="namespacebuild.html#a1bf544daac24c8c493f0bcab1fdddd32">ARGUMENTS</a>+&quot; -o &quot;+EXECUTABLE+&quot; &quot;+&quot; &quot;+<a class="el" href="namespacebuild.html#a5d6144bd70c120b901b0047a008b89ad">INCLUDE_DIR</a>+&quot; &quot;+<a class="el" href="namespacebuild.html#a832e50b60ae1bc20032caf0540c2176b">SOURCE</a>+&quot; &quot;+<a class="el" href="namespacebuild.html#a88bc45090f5d9a0b72dc833bfe64e032">LIBRARIES</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -135,7 +135,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string build.EXECUTABLE = &quot;lab&quot;</td>
+          <td class="memname">string build.EXECUTABLE = &quot;../bin/platformer&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -170,14 +170,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae7cc8d618e5b0ddf2f102be86d8b4b70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7cc8d618e5b0ddf2f102be86d8b4b70">&#9670;&nbsp;</a></span>SOURCE</h2>
+<a id="a832e50b60ae1bc20032caf0540c2176b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a832e50b60ae1bc20032caf0540c2176b">&#9670;&nbsp;</a></span>SOURCE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string build.SOURCE = &quot;./src/*.cpp&quot;</td>
+          <td class="memname">string build.SOURCE = &quot;*.cpp&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">

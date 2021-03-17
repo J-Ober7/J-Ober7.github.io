@@ -89,6 +89,8 @@ $(function() {
 <code>#include &quot;<a class="el" href="_sound_component_8hpp_source.html">SoundComponent.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_sound_factory_8hpp_source.html">SoundFactory.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_collision_system_8hpp_source.html">CollisionSystem.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_enemy_a_i_component_8hpp_source.html">EnemyAIComponent.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_enemy_a_i_factory_8hpp_source.html">EnemyAIFactory.hpp</a>&quot;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
@@ -97,7 +99,7 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af2ce972a41b3f81e079c6dcb4af385c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_engine_8cpp.html#af2ce972a41b3f81e079c6dcb4af385c3">GAMEOBJECTS</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:af2ce972a41b3f81e079c6dcb4af385c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_engine_8cpp.html#af2ce972a41b3f81e079c6dcb4af385c3">GAMEOBJECTS</a>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:af2ce972a41b3f81e079c6dcb4af385c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92ca5ab87034a348decad7ee8d4bd1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_engine_8cpp.html#ac92ca5ab87034a348decad7ee8d4bd1b">FPS</a>&#160;&#160;&#160;60</td></tr>
 <tr class="separator:ac92ca5ab87034a348decad7ee8d4bd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,6 +133,8 @@ Variables</h2></td></tr>
 <tr class="separator:ad4829ce021586fa6974b52092cb1b127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c5c070d6bac0bed9a941f0b85fc15a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sound_factory.html">SoundFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_engine_8cpp.html#a8c5c070d6bac0bed9a941f0b85fc15a8">SNDF</a></td></tr>
 <tr class="separator:a8c5c070d6bac0bed9a941f0b85fc15a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f89db5e4079d2d6c9f6ac38fe16f15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_enemy_a_i_factory.html">EnemyAIFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_engine_8cpp.html#ad3f89db5e4079d2d6c9f6ac38fe16f15">EAIF</a></td></tr>
+<tr class="separator:ad3f89db5e4079d2d6c9f6ac38fe16f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4331c6cc34958d2124b39cbca4f130fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collision_system.html">CollisionSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_engine_8cpp.html#a4331c6cc34958d2124b39cbca4f130fd">CS</a></td></tr>
 <tr class="separator:a4331c6cc34958d2124b39cbca4f130fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d2b5b016fe50b9a15dd63a6228ed2a"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_engine_8cpp.html#a27d2b5b016fe50b9a15dd63a6228ed2a">camera</a> = { 0, 0, <a class="el" href="_engine_8cpp.html#a2cd109632a6dcccaa80b43561b1ab700">SCREEN_WIDTH</a>, <a class="el" href="_engine_8cpp.html#a6974d08a74da681b3957b2fead2608b8">SCREEN_HEIGHT</a>}</td></tr>
@@ -158,7 +162,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define GAMEOBJECTS&#160;&#160;&#160;3</td>
+          <td class="memname">#define GAMEOBJECTS&#160;&#160;&#160;4</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -263,6 +267,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_collision_system.html">CollisionSystem</a> CS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3f89db5e4079d2d6c9f6ac38fe16f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f89db5e4079d2d6c9f6ac38fe16f15">&#9670;&nbsp;</a></span>EAIF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_enemy_a_i_factory.html">EnemyAIFactory</a> EAIF</td>
         </tr>
       </table>
 </div><div class="memdoc">

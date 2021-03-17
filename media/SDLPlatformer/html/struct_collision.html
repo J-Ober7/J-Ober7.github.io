@@ -69,7 +69,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Contains information about a collision, including CollisionType and object penetration.  
+<p>Contains information about a collision, including CollisionType for specifying which face of this object is being collided with, the tag of the other collider's game Object, and object penetration.  
  <a href="struct_collision.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_component_8hpp_source.html">Component.hpp</a>&gt;</code></p>
@@ -78,12 +78,28 @@ $(function() {
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9d496f140d98651d4c625d1ef7be32c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_component_8hpp.html#aa884075f403706dceea29a61771a0d44">CollisionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision.html#a9d496f140d98651d4c625d1ef7be32c5">type</a></td></tr>
 <tr class="separator:a9d496f140d98651d4c625d1ef7be32c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee5f45b572e7cea1c5db89166ed56942"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_game_object_8hpp.html#a305263dd89ad9fde1863aece00907351">Tag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision.html#aee5f45b572e7cea1c5db89166ed56942">parentTag</a></td></tr>
+<tr class="separator:aee5f45b572e7cea1c5db89166ed56942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a819bf02bcd435db162165610f5c7a49a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision.html#a819bf02bcd435db162165610f5c7a49a">penetration</a></td></tr>
 <tr class="separator:a819bf02bcd435db162165610f5c7a49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains information about a collision, including CollisionType and object penetration. </p>
+<div class="textblock"><p>Contains information about a collision, including CollisionType for specifying which face of this object is being collided with, the tag of the other collider's game Object, and object penetration. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="aee5f45b572e7cea1c5db89166ed56942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee5f45b572e7cea1c5db89166ed56942">&#9670;&nbsp;</a></span>parentTag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_game_object_8hpp.html#a305263dd89ad9fde1863aece00907351">Tag</a> Collision::parentTag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a819bf02bcd435db162165610f5c7a49a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a819bf02bcd435db162165610f5c7a49a">&#9670;&nbsp;</a></span>penetration</h2>
 

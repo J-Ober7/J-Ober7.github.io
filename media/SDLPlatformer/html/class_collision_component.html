@@ -95,9 +95,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af33726506d82d322bc77aa6f7c96285c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#af33726506d82d322bc77aa6f7c96285c">Update</a> (<a class="el" href="class_game_object.html">GameObject</a> &amp;gameObject)</td></tr>
 <tr class="memdesc:af33726506d82d322bc77aa6f7c96285c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the collider hitbox.  <a href="class_collision_component.html#af33726506d82d322bc77aa6f7c96285c">More...</a><br /></td></tr>
 <tr class="separator:af33726506d82d322bc77aa6f7c96285c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ad3f11fee0b1f1f18ae5a3bc8b86b5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_collision.html">Collision</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a3ad3f11fee0b1f1f18ae5a3bc8b86b5e">CheckCollision</a> (<a class="el" href="class_collision_component.html">CollisionComponent</a> &amp;other)</td></tr>
-<tr class="memdesc:a3ad3f11fee0b1f1f18ae5a3bc8b86b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check against the other collision component to detect any collisions. Assume that both objects have already been moved appropriately.  <a href="class_collision_component.html#a3ad3f11fee0b1f1f18ae5a3bc8b86b5e">More...</a><br /></td></tr>
-<tr class="separator:a3ad3f11fee0b1f1f18ae5a3bc8b86b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8835f751305f6238ef3db71eccd7f9a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_collision.html">Collision</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a8835f751305f6238ef3db71eccd7f9a9">CheckCollision</a> (<a class="el" href="class_collision_component.html">CollisionComponent</a> &amp;other)</td></tr>
+<tr class="memdesc:a8835f751305f6238ef3db71eccd7f9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check against the other collision component to detect any collisions. Assume that both objects have already been moved appropriately.  <a href="class_collision_component.html#a8835f751305f6238ef3db71eccd7f9a9">More...</a><br /></td></tr>
+<tr class="separator:a8835f751305f6238ef3db71eccd7f9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8ca4c4668febe7419d4b53564564ea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#af8ca4c4668febe7419d4b53564564ea6">HandleCollision</a> (<a class="el" href="struct_collision.html">Collision</a> &amp;col)</td></tr>
 <tr class="memdesc:af8ca4c4668febe7419d4b53564564ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust the parent <a class="el" href="class_game_object.html" title="This class represents a basic object in the game.">GameObject</a> appropriately based on this collision.  <a href="class_collision_component.html#af8ca4c4668febe7419d4b53564564ea6">More...</a><br /></td></tr>
 <tr class="separator:af8ca4c4668febe7419d4b53564564ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,14 +153,14 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3ad3f11fee0b1f1f18ae5a3bc8b86b5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ad3f11fee0b1f1f18ae5a3bc8b86b5e">&#9670;&nbsp;</a></span>CheckCollision()</h2>
+<a id="a8835f751305f6238ef3db71eccd7f9a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8835f751305f6238ef3db71eccd7f9a9">&#9670;&nbsp;</a></span>CheckCollision()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_collision.html">Collision</a> CollisionComponent::CheckCollision </td>
+          <td class="memname"><a class="el" href="struct_collision.html">Collision</a> * CollisionComponent::CheckCollision </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_collision_component.html">CollisionComponent</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -190,6 +190,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adjust the parent <a class="el" href="class_game_object.html" title="This class represents a basic object in the game.">GameObject</a> appropriately based on this collision. </p>
+<p>DEPRECATED </p>
 
 </div>
 </div>

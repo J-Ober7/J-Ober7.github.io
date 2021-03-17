@@ -86,6 +86,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8552b1b7b2a26197495d776601655494"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a8552b1b7b2a26197495d776601655494">init</a> (int x, int y, int w, int h, int xv, int yv)</td></tr>
 <tr class="memdesc:a8552b1b7b2a26197495d776601655494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes member fields of <a class="el" href="class_game_object.html" title="This class represents a basic object in the game.">GameObject</a> x and y is the world position (x, y). Indicates the top left corner of the object w and h is object width and height xv and yv is the velocity (xv, yv)  <a href="class_game_object.html#a8552b1b7b2a26197495d776601655494">More...</a><br /></td></tr>
 <tr class="separator:a8552b1b7b2a26197495d776601655494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad40b877a71e7219053f3d309aa85375e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ad40b877a71e7219053f3d309aa85375e">init</a> (int x, int y, int w, int h, int xv, int yv, <a class="el" href="_game_object_8hpp.html#a305263dd89ad9fde1863aece00907351">Tag</a> tag)</td></tr>
+<tr class="memdesc:ad40b877a71e7219053f3d309aa85375e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes member fields of <a class="el" href="class_game_object.html" title="This class represents a basic object in the game.">GameObject</a> x and y is the world position (x, y). Indicates the top left corner of the object w and h is object width and height xv and yv is the velocity (xv, yv) tag is the tag given to this <a class="el" href="class_game_object.html" title="This class represents a basic object in the game.">GameObject</a>.  <a href="class_game_object.html#ad40b877a71e7219053f3d309aa85375e">More...</a><br /></td></tr>
+<tr class="separator:ad40b877a71e7219053f3d309aa85375e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a882c58278316acdfb2db43570133bb3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a882c58278316acdfb2db43570133bb3d">AddComponent</a> (<a class="el" href="class_component.html">Component</a> *comp)</td></tr>
 <tr class="memdesc:a882c58278316acdfb2db43570133bb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a component to the game object.  <a href="class_game_object.html#a882c58278316acdfb2db43570133bb3d">More...</a><br /></td></tr>
 <tr class="separator:a882c58278316acdfb2db43570133bb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,6 +119,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae606a1ba1102ea29d00682f0b851a0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2312f41d7cbc3248f1565087f516779b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a2312f41d7cbc3248f1565087f516779b">m_yAcel</a> {0}</td></tr>
 <tr class="separator:a2312f41d7cbc3248f1565087f516779b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b0635a0a07427cbd3cb9dacc9a2af8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_game_object_8hpp.html#a305263dd89ad9fde1863aece00907351">Tag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a9b0635a0a07427cbd3cb9dacc9a2af8b">m_tag</a></td></tr>
+<tr class="separator:a9b0635a0a07427cbd3cb9dacc9a2af8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e02d063031840e7466c2751d190d3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a98e02d063031840e7466c2751d190d3d">canJump</a> {true}</td></tr>
 <tr class="memdesc:a98e02d063031840e7466c2751d190d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can the object jump?  <a href="class_game_object.html#a98e02d063031840e7466c2751d190d3d">More...</a><br /></td></tr>
 <tr class="separator:a98e02d063031840e7466c2751d190d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,7 +211,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a8552b1b7b2a26197495d776601655494"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8552b1b7b2a26197495d776601655494">&#9670;&nbsp;</a></span>init()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8552b1b7b2a26197495d776601655494">&#9670;&nbsp;</a></span>init() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,6 +261,66 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes member fields of <a class="el" href="class_game_object.html" title="This class represents a basic object in the game.">GameObject</a> x and y is the world position (x, y). Indicates the top left corner of the object w and h is object width and height xv and yv is the velocity (xv, yv) </p>
+
+</div>
+</div>
+<a id="ad40b877a71e7219053f3d309aa85375e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad40b877a71e7219053f3d309aa85375e">&#9670;&nbsp;</a></span>init() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObject::init </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>yv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_game_object_8hpp.html#a305263dd89ad9fde1863aece00907351">Tag</a>&#160;</td>
+          <td class="paramname"><em>tag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes member fields of <a class="el" href="class_game_object.html" title="This class represents a basic object in the game.">GameObject</a> x and y is the world position (x, y). Indicates the top left corner of the object w and h is object width and height xv and yv is the velocity (xv, yv) tag is the tag given to this <a class="el" href="class_game_object.html" title="This class represents a basic object in the game.">GameObject</a>. </p>
 
 </div>
 </div>
@@ -328,6 +393,20 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A list of all the current collision events for this <a class="el" href="class_game_object.html" title="This class represents a basic object in the game.">GameObject</a>. Accessible to all components. </p>
+
+</div>
+</div>
+<a id="a9b0635a0a07427cbd3cb9dacc9a2af8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b0635a0a07427cbd3cb9dacc9a2af8b">&#9670;&nbsp;</a></span>m_tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_game_object_8hpp.html#a305263dd89ad9fde1863aece00907351">Tag</a> GameObject::m_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

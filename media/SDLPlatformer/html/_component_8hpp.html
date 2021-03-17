@@ -79,7 +79,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision.html">Collision</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains information about a collision, including CollisionType and object penetration.  <a href="struct_collision.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains information about a collision, including CollisionType for specifying which face of this object is being collided with, the tag of the other collider's game Object, and object penetration.  <a href="struct_collision.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html">Component</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract <a class="el" href="class_component.html" title="An abstract Component of a GameObject. A Component determines the behavior of a GameObject.">Component</a> of a <a class="el" href="class_game_object.html" title="This class represents a basic object in the game.">GameObject</a>. A <a class="el" href="class_component.html" title="An abstract Component of a GameObject. A Component determines the behavior of a GameObject.">Component</a> determines the behavior of a <a class="el" href="class_game_object.html" title="This class represents a basic object in the game.">GameObject</a>.  <a href="class_component.html#details">More...</a><br /></td></tr>
@@ -87,19 +87,17 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aa884075f403706dceea29a61771a0d44"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_component_8hpp.html#aa884075f403706dceea29a61771a0d44">CollisionType</a> { <a class="el" href="_component_8hpp.html#aa884075f403706dceea29a61771a0d44a47321105d20c4efd6c573a6d829e1ad9">Top</a>
+<tr class="memitem:aa884075f403706dceea29a61771a0d44"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_component_8hpp.html#aa884075f403706dceea29a61771a0d44">CollisionType</a> { <br />
+&#160;&#160;<a class="el" href="_component_8hpp.html#aa884075f403706dceea29a61771a0d44a47321105d20c4efd6c573a6d829e1ad9">Top</a>
 , <a class="el" href="_component_8hpp.html#aa884075f403706dceea29a61771a0d44a05cdd4fa6b505ee008f4e865acfecccb">Bottom</a>
 , <a class="el" href="_component_8hpp.html#aa884075f403706dceea29a61771a0d44a9d4d8b0b72fc2659da772d761a3c5ecb">Left</a>
 , <a class="el" href="_component_8hpp.html#aa884075f403706dceea29a61771a0d44ad48f7af8c070184f3774c8e85854eb66">Right</a>
+, <br />
+&#160;&#160;<a class="el" href="_component_8hpp.html#aa884075f403706dceea29a61771a0d44a7ffb7e08daf9385fa15411b66b3694c9">NoCollision</a>
+<br />
  }</td></tr>
 <tr class="memdesc:aa884075f403706dceea29a61771a0d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of collision. Where on the object did the collision occur.  <a href="_component_8hpp.html#aa884075f403706dceea29a61771a0d44">More...</a><br /></td></tr>
 <tr class="separator:aa884075f403706dceea29a61771a0d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a305263dd89ad9fde1863aece00907351"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_component_8hpp.html#a305263dd89ad9fde1863aece00907351">Tag</a> { <a class="el" href="_component_8hpp.html#a305263dd89ad9fde1863aece00907351a97a9c10ba67e86a8a88c5cc92c22112f">Player</a>
-, <a class="el" href="_component_8hpp.html#a305263dd89ad9fde1863aece00907351a1d3a30883fde8ef6d1493b80155a870b">Enemy</a>
-, <a class="el" href="_component_8hpp.html#a305263dd89ad9fde1863aece00907351a3efc591781adcb573f6e6cd2f11b5fc3">Tile</a>
- }</td></tr>
-<tr class="memdesc:a305263dd89ad9fde1863aece00907351"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tag identifies the type of game object as it functions in the game.  <a href="_component_8hpp.html#a305263dd89ad9fde1863aece00907351">More...</a><br /></td></tr>
-<tr class="separator:a305263dd89ad9fde1863aece00907351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="aa884075f403706dceea29a61771a0d44"></a>
@@ -120,27 +118,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="aa884075f403706dceea29a61771a0d44a05cdd4fa6b505ee008f4e865acfecccb"></a>Bottom&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa884075f403706dceea29a61771a0d44a9d4d8b0b72fc2659da772d761a3c5ecb"></a>Left&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa884075f403706dceea29a61771a0d44ad48f7af8c070184f3774c8e85854eb66"></a>Right&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="a305263dd89ad9fde1863aece00907351"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a305263dd89ad9fde1863aece00907351">&#9670;&nbsp;</a></span>Tag</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="_component_8hpp.html#a305263dd89ad9fde1863aece00907351">Tag</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A tag identifies the type of game object as it functions in the game. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a305263dd89ad9fde1863aece00907351a97a9c10ba67e86a8a88c5cc92c22112f"></a>Player&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a305263dd89ad9fde1863aece00907351a1d3a30883fde8ef6d1493b80155a870b"></a>Enemy&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a305263dd89ad9fde1863aece00907351a3efc591781adcb573f6e6cd2f11b5fc3"></a>Tile&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa884075f403706dceea29a61771a0d44a7ffb7e08daf9385fa15411b66b3694c9"></a>NoCollision&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

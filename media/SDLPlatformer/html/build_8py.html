@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>A2 Platformer: build.py File Reference</title>
+<title>A2 Platformer: src/build.py File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,6 +59,10 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -78,9 +82,9 @@ Namespaces</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:aa75f224fbf929d8e46d1d31968ee6451"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#aa75f224fbf929d8e46d1d31968ee6451">build.COMPILER</a> = &quot;clang++ -std=c++17&quot;</td></tr>
 <tr class="separator:aa75f224fbf929d8e46d1d31968ee6451"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7cc8d618e5b0ddf2f102be86d8b4b70"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#ae7cc8d618e5b0ddf2f102be86d8b4b70">build.SOURCE</a> = &quot;./src/*.cpp&quot;</td></tr>
-<tr class="separator:ae7cc8d618e5b0ddf2f102be86d8b4b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad848a55f54f2234a8c862b0c3597ac1b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#ad848a55f54f2234a8c862b0c3597ac1b">build.EXECUTABLE</a> = &quot;lab&quot;</td></tr>
+<tr class="memitem:a832e50b60ae1bc20032caf0540c2176b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#a832e50b60ae1bc20032caf0540c2176b">build.SOURCE</a> = &quot;*.cpp&quot;</td></tr>
+<tr class="separator:a832e50b60ae1bc20032caf0540c2176b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad848a55f54f2234a8c862b0c3597ac1b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#ad848a55f54f2234a8c862b0c3597ac1b">build.EXECUTABLE</a> = &quot;../bin/platformer&quot;</td></tr>
 <tr class="separator:ad848a55f54f2234a8c862b0c3597ac1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bf544daac24c8c493f0bcab1fdddd32"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#a1bf544daac24c8c493f0bcab1fdddd32">build.ARGUMENTS</a> = &quot;&quot;</td></tr>
 <tr class="separator:a1bf544daac24c8c493f0bcab1fdddd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -88,8 +92,8 @@ Variables</h2></td></tr>
 <tr class="separator:a5d6144bd70c120b901b0047a008b89ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88bc45090f5d9a0b72dc833bfe64e032"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#a88bc45090f5d9a0b72dc833bfe64e032">build.LIBRARIES</a> = &quot;&quot;</td></tr>
 <tr class="separator:a88bc45090f5d9a0b72dc833bfe64e032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4abc8ff2c7b2960913e7931bb3f37aa9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#a4abc8ff2c7b2960913e7931bb3f37aa9">build.compileString</a> = COMPILER+&quot; &quot;+ARGUMENTS+&quot; -o &quot;+EXECUTABLE+&quot; &quot;+&quot; &quot;+INCLUDE_DIR+&quot; &quot;+SOURCE+&quot; &quot;+LIBRARIES</td></tr>
-<tr class="separator:a4abc8ff2c7b2960913e7931bb3f37aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7d648a6e7eb1f6b36140a180580b24"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild.html#aad7d648a6e7eb1f6b36140a180580b24">build.compileString</a> = COMPILER+&quot; &quot;+ARGUMENTS+&quot; -o &quot;+EXECUTABLE+&quot; &quot;+&quot; &quot;+INCLUDE_DIR+&quot; &quot;+SOURCE+&quot; &quot;+LIBRARIES</td></tr>
+<tr class="separator:aad7d648a6e7eb1f6b36140a180580b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

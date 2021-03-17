@@ -88,14 +88,14 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="class_collision_component.html">CollisionComponent</a>* <a class="code" href="class_collision_system.html#a51d272f9d43cf41645749ab5b076b884">requestComponent</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_collision_system.html#a968165214f5eec853c2aadea39acc998">checkCollisions</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        std::vector&lt;CollisionComponent *&gt; GameColliders;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_tile_map_factory.html">TileMapFactory</a>* tmf;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_collision_system.html#a968165214f5eec853c2aadea39acc998">checkCollisions</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        std::vector&lt;CollisionComponent *&gt; GameColliders;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="class_tile_map_factory.html">TileMapFactory</a>* tmf;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_collision_component_8hpp_html"><div class="ttname"><a href="_collision_component_8hpp.html">CollisionComponent.hpp</a></div></div>
 <div class="ttc" id="a_tile_map_factory_8hpp_html"><div class="ttname"><a href="_tile_map_factory_8hpp.html">TileMapFactory.hpp</a></div></div>
 <div class="ttc" id="aclass_collision_component_html"><div class="ttname"><a href="class_collision_component.html">CollisionComponent</a></div><div class="ttdoc">A Component which allows the gameObject to collide with other collidable objects.</div><div class="ttdef"><b>Definition:</b> CollisionComponent.hpp:10</div></div>
@@ -104,7 +104,7 @@ $(function() {
 <div class="ttc" id="aclass_collision_system_html_a51d272f9d43cf41645749ab5b076b884"><div class="ttname"><a href="class_collision_system.html#a51d272f9d43cf41645749ab5b076b884">CollisionSystem::requestComponent</a></div><div class="ttdeci">CollisionComponent * requestComponent()</div><div class="ttdef"><b>Definition:</b> CollisionSystem.cpp:22</div></div>
 <div class="ttc" id="aclass_collision_system_html_a8354dac7acab73af8119c9d636f3d239"><div class="ttname"><a href="class_collision_system.html#a8354dac7acab73af8119c9d636f3d239">CollisionSystem::init</a></div><div class="ttdeci">void init(TileMapFactory *factory)</div><div class="ttdef"><b>Definition:</b> CollisionSystem.cpp:11</div></div>
 <div class="ttc" id="aclass_collision_system_html_a87e73cfc50c93592feb1f26871a7a6b7"><div class="ttname"><a href="class_collision_system.html#a87e73cfc50c93592feb1f26871a7a6b7">CollisionSystem::shutDown</a></div><div class="ttdeci">void shutDown()</div><div class="ttdoc">Free any memory associated with the collision componenets.</div><div class="ttdef"><b>Definition:</b> CollisionSystem.cpp:15</div></div>
-<div class="ttc" id="aclass_collision_system_html_a968165214f5eec853c2aadea39acc998"><div class="ttname"><a href="class_collision_system.html#a968165214f5eec853c2aadea39acc998">CollisionSystem::checkCollisions</a></div><div class="ttdeci">void checkCollisions()</div><div class="ttdef"><b>Definition:</b> CollisionSystem.cpp:28</div></div>
+<div class="ttc" id="aclass_collision_system_html_a968165214f5eec853c2aadea39acc998"><div class="ttname"><a href="class_collision_system.html#a968165214f5eec853c2aadea39acc998">CollisionSystem::checkCollisions</a></div><div class="ttdeci">void checkCollisions()</div><div class="ttdef"><b>Definition:</b> CollisionSystem.cpp:43</div></div>
 <div class="ttc" id="aclass_collision_system_html_ac8b1ff32bb9c9ff3e765c2b334713454"><div class="ttname"><a href="class_collision_system.html#ac8b1ff32bb9c9ff3e765c2b334713454">CollisionSystem::CollisionSystem</a></div><div class="ttdeci">CollisionSystem()</div><div class="ttdoc">Construct a new Collision System object.</div><div class="ttdef"><b>Definition:</b> CollisionSystem.cpp:3</div></div>
 <div class="ttc" id="aclass_tile_map_factory_html"><div class="ttname"><a href="class_tile_map_factory.html">TileMapFactory</a></div><div class="ttdoc">Creates TileMapComponents.</div><div class="ttdef"><b>Definition:</b> TileMapFactory.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->

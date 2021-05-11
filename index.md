@@ -3,29 +3,6 @@
 
 ## Some of my Projects
 
-
-
-## An SDL Platformer: Learning Game Engines (Group: Fen, Izzy, Jakob)
-![Image of Platformer](https://J-Ober7.github.io/media/SDLPlatformer/Images/PlatfrmerSS1.png)
-
-![Image of Platformer](https://J-Ober7.github.io/media/SDLPlatformer/Images/PlatformerSS2.png)
-
-![Image of Platformer](https://J-Ober7.github.io/media/SDLPlatformer/Images/PlatformerSS3.png)
-
-[![](http://img.youtube.com/vi/jErRWb__tXE/0.jpg)](http://www.youtube.com/watch?v=jErRWb__tXE "Trailer")
-### Source Code 
-<a href="/media/SDLPlatformer/html/">Documentation here</a>
-
-### Post Mortem
-For this project, the group learned quite a bit about the different struggles that designers can face when trying to implement different design patterns to build the foundatoin of a game engine. In particular, division of information and determining where and what classes should be getting what information was one of our main problems and it occupied quite a bit of our planning talks. Ultimately, what we decided to do was have a Collision manager determine who was doing the collisions and the have the CollisionComponet hand the generated CollisionEvents back to our primary GameObject, where the CollisionEvents would then be accessible by all the other components attached to the GameObject, which would then handle all the logic regarding handling the different collisions. 
-
-We also spent quite a bit of time learning how to develop tools using python, in specific the TKinter libarary. Outside of one issue of a corrupted python library preventing one of the group members being unable to run the program, the development of our two tools we used for this project, a TileMap editor for loading up TileAtlases and creating and saving tile maps, as well as a sprite previewer, which could be used cut out and view specific sequences of sprites from a sprite sheet, went quite well. The only hick-up we had was an issue with animating the sprite cut out by the sprite editor in the window, due to a quirk of the python Application.
-
-If we had another 8 weeks to work on this project, we would focus on fleshing out our game. Currently our project was mostly focused on getting a basic engine with a component system working. To flesh out our game, we would add more levels, abilities, and enemies, adding more sophisticated elements to our engine as we need. We would also swap in new assets that better adhere to our game's identity. Finally, we would add polish such as having a title screen and game menu.
-
-
-
-
 ## Clockwork Story: A Mouse and His Tower
 
 ### Trailer
@@ -63,3 +40,27 @@ If I were to go back and redo this game the biggest thing I would change would h
 For my first foray into creating a game from the ground up using SDL, this one went pretty good. There are a couple of changes I would make if I had 8 more weeks to work on this project. I think the biggest problem I had in the structure of my code was that my util header file was a but of a mess, holding a bunch of different class structures that would have been better off seperated out. Ball, Paddle, Arena, and Brick would have all been better off in their own BreakoutObject.hpp header while PlayerScore was instead put into a header file more focused on controlling the game, like GameController.hpp. I would have also set up a GameManager class to keep track of the score, lives and levels instead of just having them be free floating in the main of breakout.cpp. 
 
 The other big changes I would have made was create a better way of checking wether the ball was colliding with a brick or not and to add a degree of randomness for how the ball bounced off the paddle. The current implementaion of ends up checking every brick in the grid every frame for a collision with the ball when I could almost certainly cut that down to a fraction of the number of comparisons. A potential solution would have been to checked the 4 corners of the ball to see where on the grid of bricks each corner landed and only checked those 4 bricks. The would have limited my number of checks each frame to a maximum of 4, but most likely 1-2, as the size of the ball would limit it from being over more than 4 squares at ones, presuming that it managed to move fast enough that it crossed into 4 squares between frames. The ball not being randomized lead to some repeating patterns in how the ball moved that could be frustrating to play against and randomization should help to break those patterns and lead to a more fun experience.
+
+
+
+## An SDL Platformer: Learning Game Engines (Group: Fen, Izzy, Jakob)
+![Image of Platformer](https://J-Ober7.github.io/media/SDLPlatformer/Images/PlatfrmerSS1.png)
+
+![Image of Platformer](https://J-Ober7.github.io/media/SDLPlatformer/Images/PlatformerSS2.png)
+
+![Image of Platformer](https://J-Ober7.github.io/media/SDLPlatformer/Images/PlatformerSS3.png)
+
+[![](http://img.youtube.com/vi/jErRWb__tXE/0.jpg)](http://www.youtube.com/watch?v=jErRWb__tXE "Trailer")
+### Source Code 
+<a href="/media/SDLPlatformer/html/">Documentation here</a>
+
+### Post Mortem
+For this project, the group learned quite a bit about the different struggles that designers can face when trying to implement different design patterns to build the foundatoin of a game engine. In particular, division of information and determining where and what classes should be getting what information was one of our main problems and it occupied quite a bit of our planning talks. Ultimately, what we decided to do was have a Collision manager determine who was doing the collisions and the have the CollisionComponet hand the generated CollisionEvents back to our primary GameObject, where the CollisionEvents would then be accessible by all the other components attached to the GameObject, which would then handle all the logic regarding handling the different collisions. 
+
+We also spent quite a bit of time learning how to develop tools using python, in specific the TKinter libarary. Outside of one issue of a corrupted python library preventing one of the group members being unable to run the program, the development of our two tools we used for this project, a TileMap editor for loading up TileAtlases and creating and saving tile maps, as well as a sprite previewer, which could be used cut out and view specific sequences of sprites from a sprite sheet, went quite well. The only hick-up we had was an issue with animating the sprite cut out by the sprite editor in the window, due to a quirk of the python Application.
+
+If we had another 8 weeks to work on this project, we would focus on fleshing out our game. Currently our project was mostly focused on getting a basic engine with a component system working. To flesh out our game, we would add more levels, abilities, and enemies, adding more sophisticated elements to our engine as we need. We would also swap in new assets that better adhere to our game's identity. Finally, we would add polish such as having a title screen and game menu.
+
+
+
+
